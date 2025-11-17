@@ -2,20 +2,27 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.HeaderView">
-    <Grid BackgroundColor="{DynamicResource Primary}">
+    <Grid BackgroundColor="{DynamicResource Primary}"
+      Padding="8,12">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+
         <Button Text="Contratar"
-                Grid.Column="0"
-                Clicked="OnContratarClicked"/>
+            Grid.Column="0"
+            Style="{StaticResource HeaderButtonStyle}"
+            Clicked="OnContratarClicked" />
+
         <Button Text="Hospedagens"
-                Grid.Column="1"
-                Clicked="OnHospedagensClicked"/>
+            Grid.Column="1"
+            Style="{StaticResource HeaderButtonStyle}"
+            Clicked="OnHospedagensClicked"/>
+
         <Button Text="Sobre"
-                Grid.Column="2"
-                Clicked="OnSobreClicked"/>
+            Grid.Column="2"
+            Style="{StaticResource HeaderButtonStyle}"
+            Clicked="OnSobreClicked"/>
     </Grid>
 </ContentView>
