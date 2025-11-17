@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.HeaderView">
+    <Grid BackgroundColor="{DynamicResource Primary}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Button Text="Contratar"
+                Grid.Column="0"
+                Clicked="OnContratarClicked"/>
+        <Button Text="Hospedagens"
+                Grid.Column="1"
+                Clicked="OnHospedagensClicked"/>
+        <Button Text="Sobre"
+                Grid.Column="2"
+                Clicked="OnSobreClicked"/>
+    </Grid>
+</ContentView>
